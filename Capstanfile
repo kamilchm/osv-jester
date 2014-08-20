@@ -1,0 +1,9 @@
+base: cloudius/osv-base
+
+cmdline: /microservice.so
+
+build: nimrod c --app:lib microservice
+
+files:
+  /microservice.so: libmicroservice.so
+  /libpcre.so.3: libpcre.so.3.13.1
